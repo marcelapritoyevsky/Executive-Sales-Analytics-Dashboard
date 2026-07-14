@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <!-- ==========================
+         Document Metadata
+    =========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Executive Sales Analytics Dashboard developed with HTML5, CSS3 and Vanilla JavaScript.">
+    <meta name="author" content="Executive Sales Analytics Dashboard">
+
+
+<title>Executive Sales Analytics Dashboard</title>
+
+<!-- ==========================
+     Stylesheet
+=========================== -->
+<link rel="stylesheet" href="css/style.css">
+
+
+</head>
+
+<body>
+
+
+<!-- ==========================
+     Dashboard Container
+=========================== -->
+<div class="dashboard-container">
+
+    <!-- ==========================
+         Header
+    =========================== -->
+    <header id="dashboard-header">
+
+        <h1>Executive Sales Analytics Dashboard</h1>
+
+        <p>
+            Business Intelligence Dashboard for Interactive Sales Analysis
+        </p>
+
+    </header>
+
+    <!-- ==========================
+         Main Content
+    =========================== -->
+    <main>
+
+        <!-- ==========================
+             Filters Section
+        =========================== -->
+        <section
+            id="filters-section"
+            aria-labelledby="filters-title">
+
+            <h2 id="filters-title">
+                Filters
+            </h2>
+
+           <div class="filter-group">
+
+    <select id="model-filter">
+        <option value="">
+            All Models
+        </option>
+    </select>
+
+
+    <select id="state-filter">
+        <option value="">
+            All States
+        </option>
+    </select>
+
+
+    <select id="year-filter">
+        <option value="">
+            All Model Years
+        </option>
+    </select>
+
+
+    <select id="status-filter">
+        <option value="">
+            All Delivery Status
+        </option>
+    </select>
+
+        </section>
+
+        <!-- ==========================
+             KPI Section
+        =========================== -->
+        <section
+            id="kpi-section"
+            aria-labelledby="kpi-title">
+
+            <h2 id="kpi-title">
+                Key Performance Indicators
+            </h2>
+
+            <div class="kpi-container">
+
+
+                <!-- KPI Card 1 -->
+                <article class="kpi-card">
+
+                    <h3>Total Sales</h3>
+
+                    <p id="total-sales">
+                        $0.00
+                    </p>
+
+                </article>
+
+                <!-- KPI Card 2 -->
+                <article class="kpi-card">
+
+                    <h3>Total Orders</h3>
+
+                    <p id="total-orders">
+                        0
+                    </p>
+
+                </article>
+
+                <!-- KPI Card 3 -->
+                <article class="kpi-card">
+
+                    <h3>Average Order Value</h3>
+
+                    <p id="average-order">
+                        $0.00
+                    </p>
+
+                </article>
+
+                <!-- KPI Card 4 -->
+                <article class="kpi-card">
+
+                    <h3>Top Performing Region</h3>
+
+                    <p id="top-region">
+                        --
+                    </p>
+
+                </article>
+
+<!-- KPI Card 5 -->
+<article class="kpi-card">
+
+    <h3>Top Selling Model</h3>
+
+    <p id="best-model">
+        --
+    </p>
+
+</article>
+
+
+<!-- KPI Card 6 -->
+<article class="kpi-card">
+
+    <h3>Average Mileage</h3>
+
+    <p id="average-mileage">
+        0
+    </p>
+
+</article>
+
+
+<!-- KPI Card 7 -->
+<article class="kpi-card">
+
+    <h3>Average Vehicle Year</h3>
+
+    <p id="average-year">
+        0
+    </p>
+
+</article>
+
+
+<!-- KPI Card 8 -->
+<article class="kpi-card">
+
+    <h3>Delivery Completion Rate</h3>
+
+    <p id="delivery-rate">
+        0%
+    </p>
+
+</article>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================
+             Charts Section
+        =========================== -->
+        <section
+            id="charts-section"
+            aria-labelledby="charts-title">
+
+            <h2 id="charts-title">
+                Sales Analytics
+            </h2>
+
+            <div class="charts-container">
+
+                <article class="chart-card">
+
+    <h3>Sales by Region</h3>
+
+    <div style="height: 300px;">
+        <canvas
+            id="sales-region-chart"
+            aria-label="Sales by Region Chart">
+        </canvas>
+    </div>
+
+</article>
+
+                <article class="chart-card">
+
+                   <h2>Sales by Model</h2>
+
+                    <div style="height: 650px;">
+              <canvas
+                    id="sales-trend-chart"
+                    aria-label="Sales by Model Chart">
+              </canvas>
+                    </div>
+
+                </article>
+
+
+ <article class="chart-card">
+
+                    <h2>Sales by State</h2>
+
+                    <div style="height: 500px;">
+                        <canvas
+                            id="sales-state-chart"
+                            aria-label="Sales by State Chart">
+                        </canvas>
+                    </div>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- ==========================
+         Footer
+    =========================== -->
+    <footer id="dashboard-footer">
+
+        <p>
+            Executive Sales Analytics Dashboard
+        </p>
+
+        <p>
+            Version 1.0 • Built with HTML5, CSS3 and Vanilla JavaScript
+        </p>
+
+    </footer>
+
+</div>
+
+<!-- ==========================
+     JavaScript
+=========================== -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script src="js/dashboard.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+
+</html>
