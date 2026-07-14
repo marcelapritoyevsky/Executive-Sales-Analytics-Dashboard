@@ -2,7 +2,7 @@
 
 An interactive Business Intelligence dashboard developed with **HTML5**, **CSS3** and **Vanilla JavaScript**.
 
-The project was designed to simulate an executive sales analytics environment, providing a clean, responsive and interactive interface for exploring sales performance through key business indicators, dynamic charts and interactive filtering.
+The project was designed to provide an executive sales analytics environment, providing a clean, responsive and interactive interface for exploring sales performance through key business indicators, dynamic charts and interactive filtering.
 
 The application emphasizes simplicity, modular architecture and maintainable front-end development without relying on external frameworks or build tools.
 
