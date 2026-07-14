@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600">
+
+    <rect
+        width="960"
+        height="600"
+        fill="#f8f9fa"/>
+
+    <text
+        x="480"
+        y="300"
+        text-anchor="middle"
+        font-family="Arial, sans-serif"
+        font-size="32"
+        fill="#555">
+        Geographic Sales Map
+    </text>
+
+</svg>

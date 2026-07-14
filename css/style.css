@@ -1,0 +1,380 @@
+/* ==========================================================
+Executive Sales Analytics Dashboard
+Version: 1.0
+Main Stylesheet
+========================================================== */
+
+/* ==========================================================
+CSS Reset
+========================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+/* ==========================================================
+Root Variables
+========================================================== */
+
+:root {
+
+```
+--color-primary: #1F3A5F;
+--color-secondary: #2E5C8A;
+--color-accent: #4CAF50;
+
+--color-background: #F5F7FA;
+--color-surface: #FFFFFF;
+
+--color-text: #2F3542;
+--color-text-light: #6B7280;
+
+--color-border: #E5E7EB;
+
+--shadow-default: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+--border-radius: 12px;
+
+--transition-default: 0.3s ease;
+```
+
+}
+
+/* ==========================================================
+Body
+========================================================== */
+
+body {
+
+```
+font-family: Arial, Helvetica, sans-serif;
+
+background-color: var(--color-background);
+
+color: var(--color-text);
+
+line-height: 1.6;
+```
+
+}
+
+/* ==========================================================
+Dashboard Container
+========================================================== */
+
+.dashboard-container {
+
+```
+width: min(1400px, 95%);
+
+margin: 0 auto;
+
+padding: 2rem;
+```
+
+}
+
+/* ==========================================================
+Header
+========================================================== */
+
+#dashboard-header {
+
+```
+text-align: center;
+
+margin-bottom: 2.5rem;
+```
+
+}
+
+#dashboard-header h1 {
+
+```
+color: var(--color-primary);
+
+font-size: 2.3rem;
+
+margin-bottom: 0.5rem;
+```
+
+}
+
+#dashboard-header p {
+
+```
+color: var(--color-text-light);
+
+font-size: 1rem;
+```
+
+}
+/* ==========================================================
+Filters Section
+========================================================== */
+
+#filters-section {
+
+```
+background: var(--color-surface);
+
+border-radius: var(--border-radius);
+
+box-shadow: var(--shadow-default);
+
+padding: 1.5rem;
+
+margin-bottom: 2rem;
+```
+
+}
+
+.filter-group {
+
+```
+display: flex;
+
+flex-wrap: wrap;
+
+gap: 1rem;
+
+margin-top: 1rem;
+```
+
+}
+
+/* ==========================================================
+KPI Section
+========================================================== */
+
+#kpi-section {
+
+```
+margin-bottom: 2.5rem;
+```
+
+}
+
+.kpi-container {
+
+```
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+
+gap: 1.5rem;
+
+margin-top: 1.5rem;
+```
+
+}
+
+.kpi-card {
+
+```
+background: var(--color-surface);
+
+border-radius: var(--border-radius);
+
+box-shadow: var(--shadow-default);
+
+padding: 1.5rem;
+
+transition: transform var(--transition-default),
+            box-shadow var(--transition-default);
+```
+
+}
+
+.kpi-card:hover {
+
+```
+transform: translateY(-4px);
+
+box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+```
+
+}
+
+.kpi-card h3 {
+
+```
+color: var(--color-text-light);
+
+font-size: 0.95rem;
+
+margin-bottom: 0.75rem;
+```
+
+}
+
+.kpi-card p {
+
+```
+color: var(--color-primary);
+
+font-size: 2rem;
+
+font-weight: bold;
+```
+
+}
+/* ==========================================================
+Charts Section
+========================================================== */
+
+#charts-section {
+
+```
+margin-bottom: 2.5rem;
+```
+
+}
+
+.charts-container {
+
+```
+display: grid;
+
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+
+gap: 1.5rem;
+
+margin-top: 1.5rem;
+```
+
+}
+
+.chart-card {
+
+```
+background: var(--color-surface);
+
+border-radius: var(--border-radius);
+
+box-shadow: var(--shadow-default);
+
+padding: 1.5rem;
+```
+
+}
+
+.chart-card h3 {
+
+```
+color: var(--color-primary);
+
+margin-bottom: 1rem;
+```
+
+}
+
+canvas {
+
+```
+width: 100%;
+
+min-height: 280px;
+```
+
+}
+
+/* ==========================================================
+Map Section
+========================================================== */
+
+#map-section {
+
+```
+background: var(--color-surface);
+
+border-radius: var(--border-radius);
+
+box-shadow: var(--shadow-default);
+
+padding: 1.5rem;
+
+margin-bottom: 2.5rem;
+```
+
+}
+
+#usa-map-container {
+
+```
+min-height: 400px;
+
+display: flex;
+
+justify-content: center;
+
+align-items: center;
+```
+
+}
+
+/* ==========================================================
+Footer
+========================================================== */
+
+#dashboard-footer {
+
+```
+text-align: center;
+
+color: var(--color-text-light);
+
+font-size: 0.9rem;
+
+padding: 1.5rem 0;
+```
+
+}
+
+/* ==========================================================
+Responsive Design
+========================================================== */
+
+@media (max-width: 768px) {
+
+```
+.dashboard-container {
+
+    width: 100%;
+
+    padding: 1rem;
+
+}
+
+
+#dashboard-header h1 {
+
+    font-size: 1.8rem;
+
+}
+
+
+.filter-group {
+
+    flex-direction: column;
+
+}
+
+
+.kpi-card p {
+
+    font-size: 1.6rem;
+
+}
+
+
+.charts-container {
+
+    grid-template-columns: 1fr;
+
+}
+```
+
+}
