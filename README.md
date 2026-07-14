@@ -2,7 +2,7 @@
 
 An interactive Business Intelligence dashboard developed with **HTML5**, **CSS3** and **Vanilla JavaScript**.
 
-The project was designed to simulate an executive sales analytics environment, providing a clean, responsive and interactive interface for exploring sales performance through key business indicators, dynamic charts and geographic visualization.
+The project was designed to simulate an executive sales analytics environment, providing a clean, responsive and interactive interface for exploring sales performance through key business indicators, dynamic charts and interactive filtering.
 
 The application emphasizes simplicity, modular architecture and maintainable front-end development without relying on external frameworks or build tools.
 
@@ -11,11 +11,12 @@ The application emphasizes simplicity, modular architecture and maintainable fro
 # Project Highlights
 
 * Executive-style Business Intelligence dashboard.
-* Interactive KPI cards.
-* Dynamic filtering system.
-* Interactive USA SVG sales map.
+* Interactive KPI cards for sales performance monitoring.
+* Dynamic filtering system by vehicle model, state, model year and delivery status.
+* Sales analysis by region and state.
+* Vehicle model revenue performance analysis.
+* Delivery completion rate monitoring.
 * Responsive layout for desktop and tablet devices.
-* CSV data export functionality.
 * Modular JavaScript architecture.
 * Clean and maintainable project structure.
 * Complete project documentation.
@@ -41,7 +42,7 @@ The primary goals of this project are:
 | HTML5                     | Application structure                     |
 | CSS3                      | Styling and responsive layout             |
 | Vanilla JavaScript (ES6+) | Dashboard logic and interactivity         |
-| SVG                       | Interactive USA sales map                 |
+| Chart.js                  | Data visualization and interactive charts |
 | JSON                      | Sales dataset                             |
 | Git & GitHub              | Version control and repository management |
 
@@ -51,33 +52,44 @@ The primary goals of this project are:
 
 ```text
 Executive-Sales-Analytics-Dashboard/
+
 │
 ├── assets/
-├── backups/
+│
 ├── css/
+│   └── style.css
+│
 ├── data/
+│   └── sales.json
+│
 ├── js/
-├── releases/
+│   ├── app.js
+│   └── dashboard.js
 │
 ├── index.html
 ├── README.md
 ├── .gitignore
+├── DATA_DICTIONARY.md
 ├── Project_Delivery_Guide.md
 ├── Final_Validation_Checklist.md
 └── Project_History.md
 ```
+
+---
+
 # Features
 
-The Executive Sales Analytics Dashboard provides a comprehensive set of interactive features designed to support sales performance analysis.
+The Executive Sales Analytics Dashboard provides interactive features designed to support sales performance analysis.
 
 ## Dashboard Features
 
 * Executive KPI cards for high-level business monitoring.
 * Interactive charts for sales analysis.
 * Dynamic filtering across dashboard components.
-* Interactive USA SVG sales map.
+* Sales performance analysis by region and state.
+* Vehicle model revenue analysis.
+* Delivery completion rate indicator.
 * Responsive user interface.
-* CSV data export.
 * Clean and intuitive dashboard layout.
 
 ---
@@ -90,21 +102,39 @@ The dashboard is composed of the following main components:
 
 The KPI section provides an executive summary of the most important sales indicators, allowing users to quickly assess business performance.
 
+The dashboard includes metrics such as:
+
+* Total Sales Revenue.
+* Vehicles Sold.
+* Average Vehicle Price.
+* Best Selling Model.
+* Top Sales Region.
+* Delivery Completion Rate.
+
+---
+
 ## Interactive Charts
 
-Dynamic charts display sales information from multiple perspectives, supporting data-driven decision making.
+Dynamic charts display sales information from different perspectives, supporting data-driven decision making.
 
-## Interactive USA Map
+The visualization layer includes:
 
-The SVG-based map allows geographic visualization of sales distribution across the United States.
+* Regional sales analysis.
+* State-level sales performance.
+* Vehicle model revenue distribution.
+
+---
 
 ## Filtering System
 
-Interactive filters update the dashboard in real time, ensuring a consistent analytical experience across all visual components.
+Interactive filters update the dashboard dynamically, allowing users to analyze specific segments of the dataset.
 
-## CSV Export
+Available filters include:
 
-Users can export filtered data for additional analysis or reporting purposes.
+* Vehicle Model.
+* State.
+* Model Year.
+* Delivery Status.
 
 ---
 
@@ -122,8 +152,8 @@ No installation process is required.
 
 1. Download or clone the repository.
 2. Open the project folder.
-3. Open `index.html` using your preferred web browser.
-4. Wait until the dashboard finishes loading.
+3. Run the project using a local web server or compatible development environment.
+4. Open `index.html` through the configured server.
 5. Explore the dashboard using the available filters and interactive components.
 
 ---
@@ -141,6 +171,7 @@ The project follows a modular front-end architecture that separates responsibili
 * `assets/` contains static project resources.
 
 This organization improves readability, maintainability and future scalability while keeping the project simple and easy to understand.
+
 ---
 
 # Future Improvements
@@ -168,7 +199,7 @@ Future versions should preserve the project's modular architecture while extendi
 | ------------- | --------- |
 | Version       | 1.0       |
 | Release       | Stable    |
-| Repository    | Private   |
+| Repository    | Public    |
 | Development   | Completed |
 | Documentation | Complete  |
 
@@ -178,50 +209,4 @@ Future versions should preserve the project's modular architecture while extendi
 
 The project includes the following documentation:
 
-| Document                      | Purpose                                      |
-| ----------------------------- | -------------------------------------------- |
-| README.md                     | Project overview and usage instructions      |
-| Project_Delivery_Guide.md     | Project administration and maintenance guide |
-| Final_Validation_Checklist.md | Final quality verification before release    |
-| Project_History.md            | Historical record of the project's evolution |
-
-Together, these documents provide a complete reference for understanding, maintaining and evolving the project.
-
----
-
-# Design Principles
-
-The development of Version 1.0 was guided by the following principles:
-
-* Simplicity over unnecessary complexity.
-* Clean and maintainable architecture.
-* Consistent documentation.
-* Separation of responsibilities.
-* Modularity and scalability.
-* Stable releases before new features.
-
-These principles will continue to guide future versions of the project.
-
----
-
-# License
-
-This project was developed for educational purposes as part of a Business Intelligence and front-end development portfolio.
-
----
-
-# Acknowledgements
-
-The Executive Sales Analytics Dashboard represents the completion of the initial development cycle of the project.
-
-Special attention was given to code organization, documentation quality, maintainability and user experience to establish a solid foundation for future versions.
-
----
-
-# Closing Notes
-
-Version **1.0** represents the first stable release of the Executive Sales Analytics Dashboard.
-
-Future improvements should build upon this version while preserving its architecture, documentation and overall project organization.
-
-Well-organized projects are easier to maintain, understand and improve over time.
+| Document |
